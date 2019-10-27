@@ -46,8 +46,8 @@ namespace TemperatureConverter
             int unit1 = fahrCels1DropDownList.SelectedIndex;
             int unit2 = fahrCels2DropDownList.SelectedIndex;
             
-            //Fahrenheit to Fahrenheit or Celsius to Celsius
-            if ((unit1 == 0 && unit2 == 0)|(unit1 == 1 && unit2 == 1))
+            //Fahrenheit to Fahrenheit or Celsius to Celsius or Kelvin to Kelvin
+            if ((unit1 == 0 && unit2 == 0)|(unit1 == 1 && unit2 == 1) | (unit1 == 2 && unit2 == 2))
             {
                 convertedTemp = inpTemp;
             }
@@ -55,9 +55,18 @@ namespace TemperatureConverter
             {
                 convertedTemp = (inpTemp - 32) * 1.8; 
             }
+            else if (unit1 == 0 && unit2 == 2) //Fahrenheit to Kelvin
+            {
+                convertedTemp = (inpTemp - 32) * 1.8+273.15;
+            }
+
             else if (unit1 == 1 && unit2 == 0) //Celsius to Fahrenheit
             {
-                convertedTemp = (inpTemp * 1.8) + 32;
+                convertedTemp = (inpTemp * 1.8) + 32.0;
+            }
+            else if (unit1 == 1 && unit2 == 2) //Celsius to Kelvin
+            {
+                convertedTemp = inpTemp + 273.15;
             }
             else
             {
