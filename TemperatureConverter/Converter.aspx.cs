@@ -30,7 +30,7 @@ namespace TemperatureConverter
             if (!haveValidTemp)
             {
                 badFieldName = "Input Temperature";
-                adviceString = "Out of Range";
+                adviceString = "Out of Range Data";
             }
 
             //if temperature input is out of range a message is displayed  and the process is interrupted
