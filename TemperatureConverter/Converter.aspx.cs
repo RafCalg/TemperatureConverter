@@ -62,7 +62,7 @@ namespace TemperatureConverter
 
             else if (unit1 == 1 && unit2 == 0) //Celsius to Fahrenheit
             {
-                convertedTemp = (inpTemp * 1.8) + 32;
+                convertedTemp = (inpTemp * 1.8) + 32.0;
             }
             else if (unit1 == 1 && unit2 == 2) //Celsius to Kelvin
             {
