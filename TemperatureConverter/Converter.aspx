@@ -34,11 +34,13 @@
                 <asp:DropDownList ID="fahrCels1DropDownList" runat="server" Height="18px" OnSelectedIndexChanged="fahrCels1DropDownList_SelectedIndexChanged">
                     <asp:ListItem Value="0">Fahrenheit</asp:ListItem>
                     <asp:ListItem Value="1">Celsius</asp:ListItem>
+                    <asp:ListItem Value="2">Kelvin</asp:ListItem>
                 </asp:DropDownList>
 &nbsp;&nbsp;
                 <asp:DropDownList ID="fahrCels2DropDownList"  runat="server" OnSelectedIndexChanged="fahrCels2DropDownList_SelectedIndexChanged">
                     <asp:ListItem Value="0">Fahrenheit</asp:ListItem>
                     <asp:ListItem Value="1">Celsius</asp:ListItem>
+                    <asp:ListItem Value="2">Kelvin</asp:ListItem>
                 </asp:DropDownList>
             </p>
             <p>
